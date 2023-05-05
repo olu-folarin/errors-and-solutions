@@ -1,0 +1,20 @@
+Error Message: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Likely Causes:
+- Perhaps you aren't in the root directory of your ec2 linux instance where you've root permissions without having to add 'sudo' before running commands.
+- You probably haven't set up and linked an SSH key to your GitHub account which will allow you push changes remotely with ease.
+
+Solution:
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
+
+
+2. Error Message: Permission denied (because you're not permitted to carry out certain actions as a non-root user) in a linux environment.
+
+Likely Cause:If you are trying to run commands in other directories other than the root directory on your linux machine, your permissions will be restricted, making it impossible to carry out lots of operations, including creating a local git directory and pushing commits to your remote directory.
+
+Solution: Return to the root directory (cd ~).
