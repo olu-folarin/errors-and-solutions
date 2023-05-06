@@ -17,4 +17,12 @@ Solution:
 
 Likely Cause:If you are trying to run commands in other directories other than the root directory on your linux machine, your permissions will be restricted, making it impossible to carry out lots of operations, including creating a local git directory and pushing commits to your remote directory.
 
-Solution: Return to the root directory (cd ~).
+Solution: Return to the root directory (cd ~)
+
+
+3. Error Message:  Unable to install java and java runtime on your aws linux ec2 instance.
+
+Solution: This could be due to the fact that you're trying to install a java version or runtime version that isn't compatible with the latest one, probably due to deprecation.
+To install 2023, run:
+	sudo dnf install java-11-amazon-corretto -y
+.
