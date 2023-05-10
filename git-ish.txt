@@ -18,7 +18,7 @@ Solution:
 Likely Cause:If you are trying to run commands in other directories other than the root directory on your linux machine, your permissions will be restricted, making it impossible to carry out lots of operations, including creating a local git directory and pushing commits to your remote directory.
 
 Solution: Return to the root directory (cd ~)
-
+Note: It's either this solution or the one in the aws-ec2 branch on this repo.
 
 3. Error Message:  Unable to install java and java runtime on your aws linux ec2 instance.
 
