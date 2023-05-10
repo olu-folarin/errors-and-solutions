@@ -1,0 +1,4 @@
+By default, an aws ec2 instance has a non-root user. to switch to a root user:
+
+1. run: sudo su -: this will take u to the root of the root ec2 user
+2. another usefulness of this is you won't need to run your commands preceded by the "sudo" keyword.
