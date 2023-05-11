@@ -1,0 +1,16 @@
+THIS FILE DETAILS SOME JENKINS ERRORS AND THEIR SOLUTIONS
+
+
+1. Error Meessgae: 
+- Failed to connect to repository : Command "git ls-remote -h -- git@github.com:olu-folarin/errors-and-solutions.git HEAD" returned status code 128:
+stdout:
+stderr: No ECDSA host key is known for github.com and you have requested strict checking.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Solution:
+- ran: ssh-keyscan github.com >> ~/.ssh/known_hosts
+- also copied and pasted the repo URL instead of the ssh link 
