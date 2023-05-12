@@ -13,4 +13,17 @@ and the repository exists.
 
 Solution:
 - ran: ssh-keyscan github.com >> ~/.ssh/known_hosts
-- also copied and pasted the repo URL instead of the ssh link 
+- also copied and pasted the repo URL instead of the ssh lin
+
+
+
+2. Error Message:
+ - /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.amzn2.0.1.x86_64 doesn’t look like a JDK directory
+
+Likely Cause:
+ - you probably didn't install the java devel package that will generate the javac version needed for jenkins to accept the provided path as a recognisable one.
+
+Solution:
+- run: yum reinstall java-11-openjdk-devel
+- to confirm installation, run: rpm -q1 java-11-openjdk-devel | grep bin/javack
+- restart jenkins by running: systemctl restart jenkins 
