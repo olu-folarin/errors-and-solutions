@@ -25,5 +25,5 @@ Likely Cause:
 
 Solution:
 - run: yum reinstall java-11-openjdk-devel
-- to confirm installation, run: rpm -q1 java-11-openjdk-devel | grep bin/javack
+- to confirm installation, run: rpm -q1 java-11-openjdk-devel | grep bin/javac
 - restart jenkins by running: systemctl restart jenkins 
